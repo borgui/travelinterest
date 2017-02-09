@@ -1,0 +1,57 @@
+html, body { 
+height: 100%; 
+margin: 0; 
+padding: 0; 
+}
+
+hr{
+border-color:#dedddd;
+}
+
+#header {
+	background: url(../images/background.jpg) no-repeat center top;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+	height:100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:white;
+	font-family: 'PT Sans', sans-serif;
+
+}
+
+#header h1{
+
+margin-top:100px;
+font-weight:700;
+font-size:48px;
+margin-bottom:100px;
+}
+
+#header p{
+
+font-size:20px;
+}
+#header .btn-info{
+	margin-top:50px;
+	background-color:#4183D7;
+	border-color:#4183D7;
+	width:300px;
+	height:70px;
+	font-size:30px;
+	text-align:center;
+}
+#header p.devinfos{
+font-size: 14px;
+}

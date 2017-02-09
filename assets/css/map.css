@@ -1,0 +1,152 @@
+html, body { 
+height: 100%; 
+margin: 0; 
+padding: 0;
+ 
+}
+
+hr{
+border-color:#dedddd;
+}
+
+#map{ 
+height:100%;
+}
+
+/* SIDENAV */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+	font-family: 'PT Sans', sans-serif;
+	overflow-y:hidden;
+	display:block;
+}
+
+.sidenav::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.sidenav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.sidenav::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+ 
+
+.sidenav:hover{
+	overflow-y:auto;
+}
+
+.sidenav .title{
+background-color:#3498db;
+font-size:24px;
+color:white;
+padding:20px 5px 20px 32px;
+width:100%;
+display:block;
+}
+.sidenav .subtitle{
+font-size:24px;
+margin-bottom:5px;
+margin-top:10px;
+}
+
+.sidenav .photo{
+width:100%;
+font-size:18px;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.sidenav .description{
+font-size:16px;
+}
+
+.sidenav .btn-info{
+background:#3498db;
+color:#fff;
+}
+.sidenav .btn-info:hover{
+background:#89C4F4;
+border-color:#89C4F4;
+}
+
+
+.sidenav .content{
+    padding: 8px 40px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #89C4F4;
+	text-decoration:none;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+	color:white;
+    right: 10px;
+    font-size: 46px;
+    margin-left: 50px;
+}
+
+.sidenav .loader{
+	visibility:hidden;
+	margin: auto auto;
+}
+
+.sidenav .address{
+	font-style:italic;
+}
+
+.sidenav .maps{
+	background-color:#3FC380;
+	border-color:#3FC380;
+	margin-left:35%;
+}
+
+.sidenav .maps:hover{
+	background-color:#A2DED0;
+	border-color:#A2DED0;
+}
+.sidenav .bx-wrapper img {
+    margin: 0 auto;
+}
+
+
+
+
+#map div iframe{
+display:none;
+}
+
+.loading {
+    border-radius: 50%;
+    width: $base-line-height;
+    height: $base-line-height;
+    border: .25rem solid $off-white;
+    border-top-color: $white;
+    animation: spin $spin-duration infinite linear;
+    margin: auto auto;
+    display:none;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
